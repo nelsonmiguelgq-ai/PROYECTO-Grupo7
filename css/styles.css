@@ -1,1 +1,31 @@
-hola
+:root {
+  --azul:      #60A5FA;
+  --azul-osc:  #1E3A8A;
+  --lila:      #C4B5FD;
+  --menta:     #A7F3D0;
+  --amarillo:  #FDE047;
+  --fondo:     #F4FBFF;
+  --texto:     #1F2A44;
+}
+
+body {
+  font-family: "Segoe UI", system-ui, -apple-system, Roboto, sans-serif;
+  color: var(--texto);
+  background: var(--fondo);
+}
+h2, h3 { color: var(--azul-osc); }
+
+/* Cabecera de sección */
+.eyebrow { display: inline-block; background: var(--menta); color: var(--azul-osc); font-weight: 700; font-size: .8rem; text-transform: uppercase; letter-spacing: 1.5px; padding: .3rem .9rem; border-radius: 50px; margin-bottom: .6rem; }
+.section-head p { max-width: 620px; margin: 0 auto; }
+
+/* Concursos */
+.contests { background: linear-gradient(180deg, #fff 0%, #ecfdf5 100%); }
+.prize { position: relative; height: 100%; background: #fff; border-radius: 22px; padding: 1.6rem 1.5rem 1.4rem 4.2rem; border-left: 6px solid var(--amarillo); box-shadow: 0 6px 20px rgba(196,181,253,.35); }
+.prize .num { position: absolute; left: 1rem; top: 1.4rem; width: 2.4rem; height: 2.4rem; display: grid; place-items: center; background: var(--lila); color: var(--azul-osc); font-weight: 800; border-radius: 50%; }
+.prize .meta { display: block; color: #6b7a99; margin-bottom: .6rem; }
+.prize p { margin: 0; }
+
+@media (max-width: 575.98px) {
+  .prize { padding-left: 3.6rem; }
+}
