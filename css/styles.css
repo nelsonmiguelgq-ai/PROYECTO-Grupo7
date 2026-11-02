@@ -20,12 +20,80 @@ h2, h3 { color: var(--azul-osc); }
 .section-head p { max-width: 620px; margin: 0 auto; }
 
 /* Concursos */
-.contests { background: linear-gradient(180deg, #fff 0%, #ecfdf5 100%); }
-.prize { position: relative; height: 100%; background: #fff; border-radius: 22px; padding: 1.6rem 1.5rem 1.4rem 4.2rem; border-left: 6px solid var(--amarillo); box-shadow: 0 6px 20px rgba(196,181,253,.35); }
-.prize .num { position: absolute; left: 1rem; top: 1.4rem; width: 2.4rem; height: 2.4rem; display: grid; place-items: center; background: var(--lila); color: var(--azul-osc); font-weight: 800; border-radius: 50%; }
-.prize .meta { display: block; color: #6b7a99; margin-bottom: .6rem; }
-.prize p { margin: 0; }
+.seccion-premios { background: linear-gradient(180deg, #fff 0%, #ecfdf5 100%); }
+
+.seccion-premios .row {
+  --bs-gutter-x: .8rem;
+  --bs-gutter-y: .8rem;
+}
+
+.premio {
+  position: relative;
+  height: 100%;
+  background: #fff;
+  border-radius: 22px;
+  padding: 1rem 1.5rem 1rem 4.2rem;
+  border-left: 6px solid var(--amarillo);
+  box-shadow: 0 6px 20px rgba(196,181,253,.35);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.premio:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 30px rgba(196,181,253,.6);
+}
+
+.premio .numero {
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+  width: 2.4rem;
+  height: 2.4rem;
+  display: grid;
+  place-items: center;
+  background: var(--lila);
+  color: var(--azul-osc);
+  font-weight: 800;
+  border-radius: 50%;
+  transition: transform 0.3s;
+}
+
+.premio:hover .numero {
+  transform: scale(1.2) rotate(360deg);
+}
+
+.premio h3 {
+  margin: 0;
+  min-height: 2.4rem;
+  display: flex;
+  align-items: center;
+}
+
+.premio .detalle,
+.premio p {
+  display: block;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  margin: 0;
+  transition: max-height 0.4s, opacity 0.4s, margin 0.4s;
+}
+
+.premio:hover .detalle,
+.premio:hover p {
+  opacity: 1;
+}
+
+.premio:hover .detalle {
+  max-height: 3rem;
+  margin: .4rem 0;
+  color: #6b7a99;
+}
+
+.premio:hover p {
+  max-height: 12rem;
+}
 
 @media (max-width: 575.98px) {
-  .prize { padding-left: 3.6rem; }
+  .premio { padding-left: 3.6rem; }
 }
