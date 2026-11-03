@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Salle Business Match 2027</title>
+    <meta name="keywords" content="La Salle, Business Match, feria virtual">
+
+    <!-- Bootstrap: se utiliza para organizar las columnas y adaptar la página a móviles -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Hoja de estilos propia -->
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+    <!-- CABECERA Y MENÚ -->
+    <header>
+        <nav class="navbar navbar-expand-lg container">
+            <a class="navbar-brand" href="index.html">
+                <strong>LA SALLE</strong>
+                <span>BUSINESS MATCH</span>
+            </a>
+
+            <!-- Botón que muestra el menú en móviles -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#menuPrincipal" aria-controls="menuPrincipal"
+                    aria-expanded="false" aria-label="Abrir menú">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menuPrincipal">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="stands.html">Stands</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ranking.html">Ranking</a></li>
+                    <li class="nav-item"><a class="nav-link" href="centros.html">Centros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="app.html">App</a></li>
+                    <li class="nav-item"><a class="nav-link" href="nosotros.html">Sobre nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link boton-menu" href="login.html">Iniciar sesión / Registro</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- PRESENTACIÓN -->
+        <section class="container presentacion">
+            <div class="row align-items-center">
+                <div class="col-lg-7">
+                    <p class="etiqueta">ENCUENTRO · TALENTO · EMPRESA</p>
+                    <p class="edicion">III EDICIÓN · 2027</p>
+                    <h1>III Feria Virtual<br>La Salle Business Match 2027</h1>
+                    <p class="descripcion">
+                        Conectamos ideas, talento y oportunidades. Descubre proyectos empresariales,
+                        conoce a otros equipos y encuentra tu próximo socio.
+                    </p>
+
+                    <p class="texto-contador">FALTAN PARA LA FERIA · 3 DE FEBRERO · 08:00</p>
+                    <div class="contador" id="contador">
+                        <div><strong id="dias">00</strong><span>Días</span></div>
+                        <div><strong id="horas">00</strong><span>Horas</span></div>
+                        <div><strong id="minutos">00</strong><span>Minutos</span></div>
+                        <div><strong id="segundos">00</strong><span>Segundos</span></div>
+                    </div>
+                    <p id="contador-fin" hidden>¡La feria ya ha comenzado!</p>
+
+                    <div class="botones">
+                        <a class="btn btn-azul" href="login.html#iniciar-sesion">Iniciar sesión</a>
+                        <a class="btn btn-amarillo" href="login.html#registro">Registrarse</a>
+                    </div>
+                </div>
+
+                <div class="col-lg-5">
+                    <div class="imagen-presentacion">
+                        <div class="circulo">LS</div>
+                        <h2>Business Match</h2>
+                        <p>Ideas que conectan empresas y personas</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROGRAMA -->
+        <section class="container seccion" id="programa">
+            <div class="titulo-seccion">
+                <p class="subtitulo">ÍNDICE</p>
+                <h2>Programa de la feria</h2>
+                <p>Así será la jornada del 3 de febrero.</p>
+            </div>
+
+            <div class="row g-3">
+                <div class="col-md-6">
+                    <article class="tarjeta programa">
+                        <span class="hora azul">09:00 – 09:15</span>
+                        <h3>Acto inaugural</h3>
+                        <p>Bienvenida oficial a la feria por videoconferencia.</p>
+                    </article>
+                </div>
+                <div class="col-md-6">
+                    <article class="tarjeta programa">
+                        <span class="hora lila">09:15 – 10:00</span>
+                        <h3>Conferencia</h3>
+                        <p>Charla de emprendimiento con ponente invitado (por confirmar).</p>
+                    </article>
+                </div>
+                <div class="col-md-6">
+                    <article class="tarjeta programa">
+                        <span class="hora verde">10:00 – 13:00</span>
+                        <h3>Feria Virtual · Mañana</h3>
+                        <p>Reuniones de compraventa entre empresas en los stands.</p>
+                    </article>
+                </div>
+                <div class="col-md-6">
+                    <article class="tarjeta programa">
+                        <span class="hora verde">15:30 – 18:30</span>
+                        <h3>Feria Virtual · Tarde</h3>
+                        <p>Segunda ronda de reuniones y negociaciones.</p>
+                    </article>
+                </div>
+                <div class="col-md-6">
+                    <article class="tarjeta programa">
+                        <span class="hora amarillo">18:30 – 19:00</span>
+                        <h3>Clausura</h3>
+                        <p>Cierre de la feria y anuncio de los ganadores del concurso.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- INFORMACIÓN Y VÍDEO -->
+        <section class="container seccion">
+            <div class="row align-items-center g-4">
+                <div class="col-lg-5">
+                    <p class="subtitulo">CONOCE LA FERIA</p>
+                    <h2>¿Qué es La Salle Business Match?</h2>
+                    <p>Un vídeo para entender cómo funciona la feria y cómo participar.</p>
+                    <ul>
+                        <li>Reuniones por videoconferencia</li>
+                        <li>Stands de empresas simuladas</li>
+                        <li>Concurso de vídeos</li>
+                    </ul>
+                </div>
+                <div class="col-lg-7">
+                    <div class="video">
+                        <div class="play">▶</div>
+                        <p>Aquí irá el vídeo de La Salle</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- VOTACIÓN -->
+        <section class="container seccion">
+            <div class="bloque-votacion row align-items-center">
+                <div class="col-lg-8">
+                    <h2>Vota tu spot favorito</h2>
+                    <p>Cada empresa y visitante puede votar un único spot. Entra, mira los vídeos y apoya al que más te guste.</p>
+                    <a class="btn btn-azul" href="ranking.html">Ir al Ranking</a>
+                </div>
+                <div class="col-lg-4 texto-estrella">
+                    ★
+                </div>
+            </div>
+        </section>
+
+        <!-- CONCURSO -->
+        <section class="fondo-seccion">
+            <div class="container seccion">
+                <div class="titulo-seccion">
+                    <p class="subtitulo">CONCURSO EN REDES</p>
+                    <h2>Concurso en redes sociales</h2>
+                    <p>Vídeos verticales de máximo 30 segundos en Instagram o TikTok con
+                        <strong>@FeriaLSBM</strong> y <strong>#FeriaLSBM2027</strong>.</p>
+                </div>
+
+                <div class="row g-3">
+                    <div class="col-md-6 col-lg-3">
+                        <article class="tarjeta concurso">
+                            <span class="numero">1</span>
+                            <h3>Elevator Pitch</h3>
+                            <p>Presenta tu propuesta de valor. Gana el más compartido.</p>
+                        </article>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <article class="tarjeta concurso">
+                            <span class="numero">2</span>
+                            <h3>Behind the Scenes</h3>
+                            <p>Enseña el trabajo en equipo detrás de tu empresa.</p>
+                        </article>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <article class="tarjeta concurso">
+                            <span class="numero">3</span>
+                            <h3>Spot Comercial</h3>
+                            <p>Anuncio profesional de tu producto o servicio estrella.</p>
+                        </article>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <article class="tarjeta concurso">
+                            <span class="numero">4</span>
+                            <h3>Recomienda a tu socio</h3>
+                            <p>Recomienda a una empresa de otro centro La Salle.</p>
+                        </article>
+                    </div>
+                </div>
+                <p class="informacion-concurso">4 premios de 50 € · Publicación desde el 1 de diciembre de 2026 · Gala de clausura el 3 de febrero de 2027</p>
+            </div>
+        </section>
+
+        <!-- DOCUMENTOS -->
+        <section class="container seccion">
+            <div class="titulo-seccion">
+                <p class="subtitulo">DESCARGAS</p>
+                <h2>Documentos de la feria</h2>
+                <p>Normas y archivos oficiales de la organización.</p>
+            </div>
+
+            <div class="row g-3">
+                <div class="col-md-6 col-lg-3">
+                    <article class="tarjeta documento">
+                        <span class="pdf">PDF</span>
+                        <h3>Normas de participación</h3>
+                        <span class="pendiente">Próximamente</span>
+                        <a class="btn btn-secundario" href="#">Descargar</a>
+                    </article>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <article class="tarjeta documento">
+                        <span class="pdf">PDF</span>
+                        <h3>Guía de participación</h3>
+                        <span class="pendiente">Próximamente</span>
+                        <a class="btn btn-secundario" href="#">Descargar</a>
+                    </article>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <article class="tarjeta documento">
+                        <span class="pdf">PDF</span>
+                        <h3>Bases del concurso</h3>
+                        <span class="pendiente">Próximamente</span>
+                        <a class="btn btn-secundario" href="#">Descargar</a>
+                    </article>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <article class="tarjeta documento">
+                        <span class="pdf">PDF</span>
+                        <h3>Otros documentos</h3>
+                        <span class="pendiente">Próximamente</span>
+                        <a class="btn btn-secundario" href="#">Descargar</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <div class="container pie">
+            <span>III Feria Virtual La Salle Business Match 2027</span>
+            <span>Ideas que conectan. Talento que transforma.</span>
+        </div>
+    </footer>
+
+    <!-- Bootstrap permite que funcione el menú desplegable en móviles -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Se mantiene el contador de la página original -->
+    <script src="js/main.js"></script>
+</body>
+</html>
