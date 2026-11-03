@@ -1,0 +1,127 @@
+/* RESET Y FONDO GLOBAL */
+body {
+  background-color: #071933; /* Azul marino oscuro idéntico a la imagen */
+  color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* NAVBAR */
+.bg-custom-dark {
+  background-color: #041024;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.navbar-ul {
+  list-style: none;
+}
+
+.nav-link {
+  color: #ffffff !important;
+  font-weight: 500;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #ffc107 !important; /* Dorado/Amarillo */
+  border-bottom: 2px solid #ffc107;
+}
+
+.btn-login {
+  color: #ffc107;
+  border-color: #ffc107;
+  border-radius: 8px;
+}
+
+.btn-login:hover {
+  background-color: #ffc107;
+  color: #041024;
+}
+
+/* FILTROS DE BÚSQUEDA */
+.custom-input,
+.custom-select {
+  background-color: #0b2246;
+  border: 1.5px solid #ffc107;
+  color: #ffffff;
+  border-radius: 20px;
+  padding: 6px 15px;
+}
+
+.custom-input::placeholder {
+  color: #a0b2ce;
+}
+
+.custom-input:focus,
+.custom-select:focus {
+  background-color: #0b2246;
+  color: #ffffff;
+  border-color: #ffca28;
+  box-shadow: 0 0 5px rgba(255, 193, 7, 0.5);
+}
+
+.custom-select {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23ffc107' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+}
+
+.custom-search-btn {
+  border-radius: 0 20px 20px 0;
+  border: 1.5px solid #ffc107;
+  border-left: none;
+}
+
+/* TARJETAS DE STANDS */
+.stand-card {
+  background-color: #0b264e;
+  border: 1.5px solid #ffc107;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.stand-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(255, 193, 7, 0.2);
+}
+
+.logo-container {
+  width: 60px;
+  height: 60px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px;
+}
+
+.stand-title {
+  font-size: 0.95rem;
+}
+
+.fs-7 {
+  font-size: 0.75rem;
+}
+
+.catalog-box {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 8px;
+  border-radius: 8px;
+}
+
+/* BOTÓN ACCEDER A SALA */
+.btn-accéder {
+  background-color: #ffc107;
+  color: #071933;
+  border: none;
+  border-radius: 15px;
+  font-size: 0.85rem;
+  padding: 6px 12px;
+  transition: background-color 0.2s;
+}
+
+.btn-accéder:hover {
+  background-color: #e0a800;
+  color: #071933;
+}
